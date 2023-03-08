@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.js"></script>
+    <style>
+
+        body {
+            background: rgb(229,33,101);
+            background: linear-gradient(90deg, rgba(229,33,101,1) 0%, rgba(13,17,55,1) 100%);
+        }
+        section {
+            background-color: white;
+            justify-content: center;
+            border: 1px solid black;
+            margin: auto;
+            padding: 2rem;
+            text-align: center;
+            width: 30%;
+            justify-content: center;
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        }
+
+        #pwd1, #pwd2 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section id="form">
+    <center>
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <p >Employees:</p>
+    <p id="sort"></p>
+
+
+    <h4>Javascript Simple Password Validation</h4>
+
+    <form action="#" onsubmit="validateForm()">
+        <div>
+            <label for="">Create Password:<input id="pwd1" type="password" required></label>
+            <span id = "message1" style="color:red"> </span> <br><br>  
+        </div>
+        <div>
+            <label for="">Confirm Password:<input id="pwd2" type="password" required></label>
+            <span id = "message2" style="color:red"> </span> <br><br>  
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    </center>
+    </section>
+    
+
+</body>
+</html>
